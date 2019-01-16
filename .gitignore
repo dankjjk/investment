@@ -1,0 +1,33 @@
+.idea/
+node_modules
+package-lock.json
+npm-debug.log
+.DS_Store
+terminal.glue
+### Windows template
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
