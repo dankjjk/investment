@@ -1,0 +1,17 @@
+/*  Fonts  */
+@import "global/fonts.scss";
+
+/*  Custom styles for this template  */
+@import "../../node_modules/reset-css/sass/_reset.scss";
+@import "global/base.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "global/color.scss";
+
+/*  Sections  */
+@import "sections/header.scss";
+@import "sections/main.scss";
+@import "sections/about.scss";
+@import "sections/footer.scss";
+
+/*	Media	 */
+@import "sections/_media.scss";

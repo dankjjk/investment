@@ -1,0 +1,25 @@
+body {
+	font-family: 'Roboto Regular', sans-serif;
+	font-size: 1em;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}

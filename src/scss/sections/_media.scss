@@ -1,0 +1,184 @@
+header [type="checkbox"] {
+	display: none;
+}
+
+header label.toggleMenu {
+	color: #fff;
+	font-size: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+header label.toggleMenu .fas {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+@media all and (max-width: 991px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	header label.toggleMenu {
+		display: block;
+	}
+
+	header input.toggleMenu:checked ~ nav {
+		display: block;
+		padding-top: 20px;
+	}
+
+	header {
+		.logo {
+			text-align: left;
+		}
+
+		.nav {
+			display: none;
+
+			&__menu {
+				flex-direction: column;
+				text-align: center;
+			}
+			
+			&__items {
+				margin-bottom: 20px;
+			}
+
+			&__links {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.main {
+		&__title {
+			h1 {
+				font-size: 4em;
+			}
+
+			p {
+
+			}
+		}
+	}
+
+	.about {
+
+		&__top {
+
+		}
+
+		&__title--main {
+
+			h1 {
+				&::before {
+					font-size: 4em;
+				}
+			}
+		}
+
+		&__bottom {
+
+		}
+
+		&__item {
+
+			i {
+
+			}
+
+			h2 {
+
+			}
+
+			p {
+
+			}
+		}
+	}
+
+	.about-team {
+
+		&--top {
+
+		}
+
+		&--title {
+
+			h1 {
+
+				}
+
+			p {
+
+			}
+		}
+
+		&--bottom {
+
+		}
+
+		&__item {
+
+			img {
+
+			}
+		}
+		
+		&__inner {
+
+			p {
+
+			}
+
+			span {
+
+			}
+		}
+	}
+
+	.about-job {
+
+		&__left {
+
+		}
+
+		&__title {
+
+		}
+
+		&__text {
+
+		}
+
+		&__tech {
+			span {
+
+			}
+
+			span:nth-child(1) {
+				width: 65%;
+			}
+
+			span:nth-child(2) {
+				width: 85%;
+			}
+
+			span:nth-child(3) {
+				width: 100%;
+			}
+		}
+
+		&__right {
+
+		}
+
+		&__img {
+
+		}
+	}
+}
