@@ -1,94 +1,137 @@
-header [type="checkbox"] {
-	display: none;
-}
-
-header label.toggleMenu {
-	color: #fff;
-	font-size: 20px;
-	display: none;
-	cursor: pointer;
-}
-
-header label.toggleMenu .fas {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-}
-
-@media all and (max-width: 991px) {
-	body {
-		overflow-x: hidden;
-	}
-
-	header label.toggleMenu {
-		display: block;
-	}
-
-	header input.toggleMenu:checked ~ nav {
-		display: block;
-		padding-top: 20px;
-	}
-
-	header {
-		.logo {
-			text-align: left;
-		}
-
-		.nav {
-			display: none;
-
-			&__menu {
-				flex-direction: column;
-				text-align: center;
-			}
-			
-			&__items {
-				margin-bottom: 20px;
+@media (max-width: 767px) {
+	.main {
+		&__title {
+			h1 {
+				font-size: 2.5em;
 			}
 
-			&__links {
-				&::after {
-					display: none;
-				}
+			p {
+				font-size: .75em;
 			}
 		}
 	}
+	
+	/*****	About	 *****/
+	.about {
+		&__title--main {
+
+			h1 {
+				font-size: 1.325em;
+				line-height: 1.4;
+				padding: 75px 0;
+			}
+		}
+
+		&__item {
+			padding: 20px 0;
+			width: 85%;
+		}
+	}
+	/*****	End About Section	 *****/
+
+	
+	/*****	About-Team Section	 *****/
+	.about-team {
+		padding-bottom: 15px;
+
+		&--top {
+			padding-bottom: 35px;
+		}
+
+		&--title {
+			h1 {
+				font-size: 1.325em;
+				line-height: 1.4;
+				padding: 75px 0 65px;
+			}
+
+			p {
+				font-size: 1.3em;
+				line-height: 1.4;
+				margin: 0 auto;
+				width: 85%;
+			}
+		}
+
+		&--bottom {
+			flex-direction: column;
+		}
+
+		&__item {
+			margin-bottom: 60px;
+		}
+	}
+	/***** End	About-Team Section	 *****/
+
+
+	/*****	About-Job Section	 *****/
+	.about-job {
+		&__tech {
+			span {
+				line-height: 1.2;
+			}
+
+			span:nth-child(1) {
+				width: 65%;
+			}
+
+			span:nth-child(2) {
+				width: 85%;
+			}
+
+			span:nth-child(3) {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}
+
+		&__img {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/*   Active button	 */
+
+	/*   header	 */
 
 	.main {
 		&__title {
 			h1 {
-				font-size: 4em;
+				font-size: 4.5em;
 			}
 
 			p {
-
+				font-size: .875em;
 			}
 		}
 	}
+	
+	/*****	About	 *****/
 
 	.about {
 
-		&__top {
+		// &__top {
 
-		}
+		// }
 
 		&__title--main {
-
 			h1 {
-				&::before {
-					font-size: 4em;
-				}
+				font-size: 1.8em;
 			}
 		}
 
-		&__bottom {
+		// &__bottom {
 
-		}
+		// }
 
 		&__item {
+			padding: 35px 0;
+			width: 80%;
 
 			i {
-
+				padding: 30px;
 			}
 
 			h2 {
@@ -96,65 +139,53 @@ header label.toggleMenu .fas {
 			}
 
 			p {
-
+				font-size: 1.2em;
+				line-height: 1.25;
 			}
 		}
 	}
+	/*****	End About Section	 *****/
+	
 
+	/*****	About-Team Section	 *****/
 	.about-team {
-
-		&--top {
-
-		}
+		padding-bottom: 15px;
 
 		&--title {
 
 			h1 {
+				font-size: 1.8em;
+				padding: 80px 0;
 
+				&:before {
+					font-size: 5em;
 				}
+			}
 
 			p {
-
+				font-size: 1.4em;
 			}
 		}
 
 		&--bottom {
-
+			justify-content: space-between;
 		}
 
 		&__item {
-
-			img {
-
-			}
+			margin-bottom: 70px;
 		}
 		
 		&__inner {
-
+			bottom: -10%;
 			p {
-
-			}
-
-			span {
-
+				line-height: 1.25;
 			}
 		}
 	}
+	/*****	End About-Team Section	 *****/
 
+	/*****	About-Job Section	 *****/
 	.about-job {
-
-		&__left {
-
-		}
-
-		&__title {
-
-		}
-
-		&__text {
-
-		}
-
 		&__tech {
 			span {
 
@@ -172,13 +203,82 @@ header label.toggleMenu .fas {
 				width: 100%;
 			}
 		}
+	}
+	/*****	End About-Job Section	 *****/
+}
 
-		&__right {
+@media (max-width: 991px) {
+	body {
+		overflow-x: hidden;
+	}
 
+	/*   Active button	 */
+
+	header.header--active {
+		background: $main-color;
+		position: relative;
+	}
+
+	header {
+		padding: 0;
+
+		.header__btn {
+			display: block;
 		}
 
-		&__img {
+		.nav {
+			display: none;
 
+			&--active {
+				display: block;
+			}
+
+			&__menu {
+				flex-direction: column;
+				text-align: center;
+
+				&--active {
+					height: 100vh;
+				}
+			}
+			
+			&__items {
+				margin-bottom: 20px;
+			}
+
+			&__links {
+				&::after {
+					display: none;
+				}
+			}
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	/*   End Active button	 */
+
+
+	/*   About Section	 */
+
+	.about {
+		&__bottom {
+			align-items: center;
+			flex-direction: column;
+			padding-top: 0;
+		}
+
+		&__item {
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
 		}
 	}
 }

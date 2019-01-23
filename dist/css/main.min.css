@@ -3176,6 +3176,19 @@ header {
     text-align: center; }
     header .logo__img {
       height: 50px; }
+  header .header__btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    display: none;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 15px; }
+    header .header__btn:hover {
+      cursor: pointer; }
 
 .nav__menu {
   display: -webkit-box;
@@ -3189,7 +3202,9 @@ header {
   padding: 0 5%; }
 
 .nav__links {
+  font-size: .9em;
   color: #f5f5f5;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.01em; }
   .nav__links::after {
@@ -3254,13 +3269,13 @@ header {
   .about__top {
     width: 100%; }
   .about__title--main {
-    position: relative;
     text-align: center; }
     .about__title--main h1 {
       font-size: 2em;
       padding: 120px 0;
       text-transform: uppercase;
-      letter-spacing: 0.05em; }
+      letter-spacing: 0.05em;
+      position: relative; }
       .about__title--main h1::before {
         content: 'W';
         display: block;
@@ -3301,11 +3316,11 @@ header {
     width: 100%;
     padding-bottom: 50px; }
   .about-team--title {
-    position: relative;
     text-align: center; }
     .about-team--title h1 {
       font-size: 2em;
       padding: 120px 0;
+      position: relative;
       text-transform: uppercase;
       letter-spacing: 0.05em; }
       .about-team--title h1::before {
@@ -3325,12 +3340,15 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     width: 100%; }
   .about-team__item {
     position: relative;
     text-align: center; }
     .about-team__item img {
-      height: auto;
       width: 270px; }
   .about-team__inner {
     background-color: #fff;
@@ -3375,6 +3393,7 @@ header {
     display: block;
     font-size: 0.95em;
     text-transform: uppercase;
+    line-height: 1.4;
     padding: 14px 20px;
     margin-bottom: 20px; }
   .about-job__tech span:nth-child(1) {
@@ -3390,51 +3409,147 @@ header {
     max-width: 390px; }
 
 /*	Media	 */
-header [type="checkbox"] {
-  display: none; }
-
-header label.toggleMenu {
-  color: #fff;
-  font-size: 20px;
-  display: none;
-  cursor: pointer; }
-
-header label.toggleMenu .fas {
-  position: absolute;
-  top: 15px;
-  right: 15px; }
-
-@media all and (max-width: 991px) {
-  body {
-    overflow-x: hidden; }
-  header label.toggleMenu {
-    display: block; }
-  header input.toggleMenu:checked ~ nav {
-    display: block;
-    padding-top: 20px; }
-  header .logo {
-    text-align: left; }
-  header .nav {
-    display: none; }
-    header .nav__menu {
+@media (max-width: 767px) {
+  .main__title h1 {
+    font-size: 2.5em; }
+  .main__title p {
+    font-size: .75em; }
+  /*****	About	 *****/
+  .about__title--main h1 {
+    font-size: 1.325em;
+    line-height: 1.4;
+    padding: 75px 0; }
+  .about__item {
+    padding: 20px 0;
+    width: 85%; }
+  /*****	End About Section	 *****/
+  /*****	About-Team Section	 *****/
+  .about-team {
+    padding-bottom: 15px; }
+    .about-team--top {
+      padding-bottom: 35px; }
+    .about-team--title h1 {
+      font-size: 1.325em;
+      line-height: 1.4;
+      padding: 75px 0 65px; }
+    .about-team--title p {
+      font-size: 1.3em;
+      line-height: 1.4;
+      margin: 0 auto;
+      width: 85%; }
+    .about-team--bottom {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column;
-      text-align: center; }
-    header .nav__items {
-      margin-bottom: 20px; }
-    header .nav__links::after {
-      display: none; }
-  .main__title h1 {
-    font-size: 4em; }
-  .about__title--main h1::before {
-    font-size: 4em; }
+      flex-direction: column; }
+    .about-team__item {
+      margin-bottom: 60px; }
+  /***** End	About-Team Section	 *****/
+  /*****	About-Job Section	 *****/
+  .about-job__tech span {
+    line-height: 1.2; }
   .about-job__tech span:nth-child(1) {
     width: 65%; }
   .about-job__tech span:nth-child(2) {
     width: 85%; }
   .about-job__tech span:nth-child(3) {
+    width: 100%;
+    margin-bottom: 40px; }
+  .about-job__img {
     width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*   Active button	 */
+  /*   header	 */
+  .main__title h1 {
+    font-size: 4.5em; }
+  .main__title p {
+    font-size: .875em; }
+  /*****	About	 *****/
+  .about__title--main h1 {
+    font-size: 1.8em; }
+  .about__item {
+    padding: 35px 0;
+    width: 80%; }
+    .about__item i {
+      padding: 30px; }
+    .about__item p {
+      font-size: 1.2em;
+      line-height: 1.25; }
+  /*****	End About Section	 *****/
+  /*****	About-Team Section	 *****/
+  .about-team {
+    padding-bottom: 15px; }
+    .about-team--title h1 {
+      font-size: 1.8em;
+      padding: 80px 0; }
+      .about-team--title h1:before {
+        font-size: 5em; }
+    .about-team--title p {
+      font-size: 1.4em; }
+    .about-team--bottom {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .about-team__item {
+      margin-bottom: 70px; }
+    .about-team__inner {
+      bottom: -10%; }
+      .about-team__inner p {
+        line-height: 1.25; }
+  /*****	End About-Team Section	 *****/
+  /*****	About-Job Section	 *****/
+  .about-job__tech span:nth-child(1) {
+    width: 65%; }
+  .about-job__tech span:nth-child(2) {
+    width: 85%; }
+  .about-job__tech span:nth-child(3) {
+    width: 100%; }
+  /*****	End About-Job Section	 *****/ }
+
+@media (max-width: 991px) {
+  body {
+    overflow-x: hidden; }
+  /*   Active button	 */
+  header.header--active {
+    background: #11749e;
+    position: relative; }
+  header {
+    padding: 0; }
+    header .header__btn {
+      display: block; }
+    header .nav {
+      display: none; }
+      header .nav--active {
+        display: block; }
+      header .nav__menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center; }
+        header .nav__menu--active {
+          height: 100vh; }
+      header .nav__items {
+        margin-bottom: 20px; }
+      header .nav__links::after {
+        display: none; }
+    header::after {
+      display: none; }
+  /*   End Active button	 */
+  /*   About Section	 */
+  .about__bottom {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 0; }
+  .about__item:first-child {
+    padding-top: 0; }
+  .about__item:last-child {
+    padding-bottom: 0; } }
 
 /*# sourceMappingURL=main.min.css.map */

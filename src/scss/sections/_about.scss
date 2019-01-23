@@ -8,13 +8,14 @@
 	}
 
 	&__title--main {
-		position: relative;
 		text-align: center;
 		h1 {
 			font-size: 2em;
 			padding: 120px 0;
 			text-transform: uppercase;
 			letter-spacing: 0.05em;
+			position: relative;
+
 			&::before {
 				content: 'W';
 				display: block;
@@ -68,11 +69,11 @@
 	}
 
 	&--title {
-		position: relative;
 		text-align: center;
 		h1 {
 			font-size: 2em;
 			padding: 120px 0;
+			position: relative;
 			text-transform: uppercase;
 			letter-spacing: 0.05em;
 			&::before {
@@ -95,6 +96,8 @@
 
 	&--bottom {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 		width: 100%;
 	}
 
@@ -103,7 +106,6 @@
 		text-align: center;
 
 		img {
-			height: auto;
 			width: 270px;
 		}
 	}
@@ -162,6 +164,7 @@
 			display: block;
 			font-size: 0.95em;
 			text-transform: uppercase;
+			line-height: 1.4;
 			padding: 14px 20px;
 			margin-bottom: 20px;
 		}

@@ -18,17 +18,18 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-2">
+          <div class="col-lg-2 d-none d-lg-block">
             <div class="logo">
               <a href="#"><img class="logo__img" src="img/Logo.png" alt="Logotype"></a>
             </div>
-            <label for="menu" class="toggleMenu"><i class="fas fa-bars"></i></label>
           </div>
           <div class="col-lg-8">
-            <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+            <button class="header__btn">
+              <i class="fas fa-bars"></i>
+            </button>
             <nav class="nav">
               <ul class="nav__menu">
                 <li class="nav__items"><a href="#" class="nav__links">Home</a></li>
@@ -80,36 +81,28 @@
         <div class="container">
           <div class="row">
             <div class="about__top">
-              <div class="col-lg-12">
-                <div class="about__title--main">
-                  <h1>We Are An Awesome Agency</h1>
-                </div>
+              <div class="about__title--main">
+                <h1>We Are An Awesome Agency</h1>
               </div>
             </div>
 
             <div class="about__bottom">
-              <div class="col-lg-4">
-                <div class="about__item">
-                  <i class="fas fa-brain"></i>
-                  <h2 class="about__title">Feature one</h2>
-                  <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
-                </div>
+              <div class="about__item">
+                <i class="fas fa-brain"></i>
+                <h2 class="about__title">Feature one</h2>
+                <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
               </div>
 
-              <div class="col-lg-4">
-                <div class="about__item">
-                  <i class="far fa-calendar-alt"></i>
-                  <h2 class="about__title">Feature one</h2>
-                  <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
-                </div>
+              <div class="about__item">
+                <i class="far fa-calendar-alt"></i>
+                <h2 class="about__title">Feature one</h2>
+                <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
               </div>
 
-              <div class="col-lg-4">
-                <div class="about__item">
-                  <i class="fas fa-check-square"></i>
-                  <h2 class="about__title">Feature one</h2>
-                  <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
-                </div>
+              <div class="about__item">
+                <i class="fas fa-check-square"></i>
+                <h2 class="about__title">Feature one</h2>
+                <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
               </div>
             </div>
           </div>
@@ -126,33 +119,27 @@
               </div>
             </div>
             <div class="about-team--bottom">
-              <div class="col-md-4">
-                <div class="about-team__item">
-                  <img src="img/team/team.png" alt="Developer">
-                  <div class="about-team__inner">
-                    <p>Alexander Semenov</p>
-                    <span>WebDesigner</span>
-                  </div>
+              <div class="about-team__item">
+                <img src="img/team/team.png" alt="Developer">
+                <div class="about-team__inner">
+                  <p>Alexander Semenov</p>
+                  <span>WebDesigner</span>
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="about-team__item">
-                  <img src="img/team/team1.png" alt="Developer">
-                  <div class="about-team__inner">
-                    <p>Alexander Semenov</p>
-                    <span>Front-end developer</span>
-                  </div>
+              <div class="about-team__item">
+                <img src="img/team/team1.png" alt="Developer">
+                <div class="about-team__inner">
+                  <p>Alexander Semenov</p>
+                  <span>Front-end</span>
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="about-team__item">
-                  <img src="img/team/team2.png" alt="Developer">
-                  <div class="about-team__inner">
-                    <p>Alexander Semenov</p>
-                    <span>Photographer</span>
-                  </div>
+              <div class="about-team__item">
+                <img src="img/team/team2.png" alt="Developer">
+                <div class="about-team__inner">
+                  <p>Alexander Semenov</p>
+                  <span>Photographer</span>
                 </div>
               </div>
             </div>
@@ -166,8 +153,10 @@
             <div class="col-md-6 align-self-center">
               <div class="about-job__left">
                 <h2 class="about-job__title">Akita Inu Dog</h2>
-                <p class="about-job__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.<br>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
-
+                <div class="about-job__text">
+                  <p style="margin-bottom: 20px">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                  <p>Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
+                </div>
                 <div class="about-job__tech">
                   <span>Fully Responsive Design</span>
                   <span>High Quality Code</span>
@@ -192,5 +181,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script>
+      $(document).ready(function() {
+        $('.header__btn').on('click', function(event) {
+          event.preventDefault();
+          $('header').toggleClass('header--active');
+          $('.nav').toggleClass('nav--active');
+          $('.nav__menu').toggleClass('nav__menu--active');
+        });
+      });
+    </script>
   </body>
 </html>

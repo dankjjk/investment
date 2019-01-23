@@ -24,6 +24,23 @@ header {
 			height: 50px;
 		}
 	}
+
+	.header__btn {
+		background: transparent;
+		border: none;
+		color: #fff;
+		display: none;
+		font-size: 18px;
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		top: 20px;
+		right: 15px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 
 .nav {
@@ -38,7 +55,9 @@ header {
 	}
 
 	&__links {
+		font-size: .9em;
 		color: $text-color;
+		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.01em;
 
