@@ -1,0 +1,68 @@
+.skills {
+	// background-color: $main-color;
+	background: url('../img/skills-bg.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding: 60px 0 90px;
+
+	&-title {
+
+		font-family: 'Roboto Light', sans-serif;
+		font-size: 1.2em;
+		text-align: center;
+
+		h1 {
+			color: rgb(245, 245, 245);
+			font-size: 2em;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			padding: 100px 0;
+			position: relative;
+
+			&::after {
+				content: 'S';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				font-size: 6em;
+				opacity: 0.18;
+			}
+		}
+
+		p {
+			padding-bottom: 25px;
+		}
+
+		&__text {
+			width: 100%;
+			margin: auto;
+			li {
+				text-align: center;
+				list-style-type: none;
+				padding: 15px 0;
+				line-height: 1.2;
+			}
+		}
+	}
+
+	&-item {
+		display: flex;
+		justify-content: space-around;
+		width: 75%;
+		margin: auto;
+		flex-wrap: wrap;
+
+		&__block {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 50px 0 75px;
+
+			span {
+				padding: 15px 0;
+			}
+		}
+	}
+}

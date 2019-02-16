@@ -33,9 +33,9 @@
             <nav class="nav">
               <ul class="nav__menu">
                 <li class="nav__items"><a href="#" class="nav__links">Home</a></li>
-                <li class="nav__items"><a href="#" class="nav__links">About</a></li>
-                <li class="nav__items"><a href="#" class="nav__links">Gallery</a></li>
-                <li class="nav__items"><a href="#" class="nav__links">Contacts</a></li>
+                <li class="nav__items"><a href="#about" class="nav__links">About</a></li>
+                <li class="nav__items"><a href="#gallery" class="nav__links">Gallery</a></li>
+                <li class="nav__items"><a href="#contacts" class="nav__links">Contacts</a></li>
               </ul>
             </nav>
           </div>
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="row">
             <div class="about__top">
@@ -173,23 +173,106 @@
           </div>
         </div>
       </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="gallery-top">
+              <h1>Gallery</h1>
+              <p>Examples of work performed</p>
+            </div>
+
+            <div class="gallery-bottom">
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/1.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/2.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/3.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/4.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/5.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/6.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/7.jpg" alt="Gallery">
+              </div>
+
+              <div class="gallery-bottom__item">
+                <img src="img/gallery/8.jpg" alt="Gallery">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills-title">
+          <h1>Our skills</h1>
+          <p>My professional qualities:</p>
+          <ul class="skills-title__text">
+            <li>Detailed approach to work</li>
+            <li>I do not use designers,<br> I work in manual mode</li>
+            <li>I will always share if<br> I see a more rational decision.</li>
+            <li>Clear compliance with the technical task</li>
+            <li>Literacy, politeness and clean code</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts" data-vide-bg="video/Toy_is_gone/Toy_is_gone">
+        <div class="contacts-block">
+          <h1>Contacts</h1>
+          <div class="contacts-block__items">
+            <div class="contacts-block__item">
+              <i class="far fa-envelope"></i>
+              <p>Email: <span>a.semenov@gmail.com</span></p>
+            </div>
+            <div class="contacts-block__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Address: <span>a.semenov</span></p>
+            </div>
+            <div class="contacts-block__item">
+              <i class="fas fa-phone"></i>
+              <p>Phone: <span><br>+7 (914) 000-00-00</span></p>
+            </div>
+            <div class="contacts-block__item">
+              <i class="fab fa-vk"></i>
+              <p>VK: <span>vk.com/a.semenov</span></p>
+            </div>
+            <div class="contacts-block__item">
+              <i class="fab fa-instagram"></i>
+              <p>VK: <span>vk.com/a.semenov</span></p>
+            </div>
+            <div class="contacts-block__item">
+              <i class="fab fa-facebook-f"></i>
+              <p>Facebook: <span>facebook.com/a.semenov</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
     
 
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
-    <script>
-      $(document).ready(function() {
-        $('.header__btn').on('click', function(event) {
-          event.preventDefault();
-          $('header').toggleClass('header--active');
-          $('.nav').toggleClass('nav--active');
-          $('.nav__menu').toggleClass('nav__menu--active');
-        });
-      });
-    </script>
+    <!-- <script src="js/libs/jquery-3.3.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

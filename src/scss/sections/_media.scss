@@ -89,6 +89,98 @@
 			width: 100%;
 		}
 	}
+
+
+	/*   Gallery Section	 */
+	.gallery {
+		&-bottom {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			&__item {
+				display: block;
+				flex: none;
+				width: 100%;
+				padding: 10px;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+/*   Skills Section	 */
+
+	.skills {
+
+		&-title {
+			font-size: 1.2em;
+
+			h1 {
+				font-size: 1.6em;
+
+				&::after {
+					font-size: 5.5em;
+
+				}
+			}
+
+			p {
+				padding-bottom: 20px;
+			}
+
+			&__text {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				li {
+					text-align: center;
+					list-style-type: none;
+					padding: 10px 0;
+				}
+			}
+		}
+
+		&-item {
+			&__block {
+				padding: 30px 0;
+
+				&:last-child {
+					padding-bottom: 50px;
+				}
+			}
+		}
+	}
+
+	.contacts {
+		color: #353535;
+
+		&-block {
+			padding: 20px;
+			border: 1px solid silver;
+			h1 {
+				font-size: 2.8em;
+			}
+
+			&__item {
+				flex: 0 0 50%;
+				width: 50%;
+				padding: 20px 0;
+
+				i {
+					font-size: 2em;
+					padding: 10px 0;
+				}
+
+				p {
+					font-size: .5em;
+				}
+			}
+		}
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -205,6 +297,7 @@
 		}
 	}
 	/*****	End About-Job Section	 *****/
+
 }
 
 @media (max-width: 991px) {
@@ -281,4 +374,5 @@
 			}
 		}
 	}
+	/*   End About Section	 */
 }

@@ -94,9 +94,17 @@ gulp.task('copy:js-libs', function() {
 });
 
 
+/* --------------- Copy video-bg --------------- */
+
+gulp.task('copy:video-bg', function() {
+	return gulp.src('src/video/**/*.*')
+		.pipe(gulp.dest('dist/video'));
+});
+
+
 /* --------------- Copy --------------- */
 
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:fonts', 'copy:js-libs'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:js-libs', 'copy:video-bg'));
 
 
 /* --------------- Watchers --------------- */

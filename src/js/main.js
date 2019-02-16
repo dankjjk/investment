@@ -1,0 +1,9 @@
+$(document).ready(function() {
+  $('.header__btn').on('click', function(event) {
+    event.preventDefault();
+    $('header').toggleClass('header--active');
+    $('.nav').toggleClass('nav--active');
+    $('.nav__menu').toggleClass('nav__menu--active');
+  });
+});
+
