@@ -15,6 +15,10 @@
 
     <!-- Main CSS -->
     <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/lightbox.min.css">
+
+    <!-- Scripts -->
+
   </head>
 
   <body>
@@ -26,6 +30,7 @@
               <a href="#"><img class="logo__img" src="img/Logo.png" alt="Logotype"></a>
             </div>
           </div>
+
           <div class="col-lg-8">
             <button class="header__btn">
               <i class="fas fa-bars"></i>
@@ -39,6 +44,7 @@
               </ul>
             </nav>
           </div>
+
           <div class="col-lg-2 d-none d-lg-block">
             <div class="social">
               <ul class="social__icons">
@@ -87,19 +93,19 @@
             </div>
 
             <div class="about__bottom">
-              <div class="about__item">
+              <div class="about__item wow slideInLeft">
                 <i class="fas fa-brain"></i>
                 <h2 class="about__title">Feature one</h2>
                 <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
               </div>
 
-              <div class="about__item">
+              <div class="about__item wow slideInUp">
                 <i class="far fa-calendar-alt"></i>
                 <h2 class="about__title">Feature one</h2>
                 <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
               </div>
 
-              <div class="about__item">
+              <div class="about__item wow slideInRight">
                 <i class="fas fa-check-square"></i>
                 <h2 class="about__title">Feature one</h2>
                 <p class="about__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.</p>
@@ -119,7 +125,7 @@
               </div>
             </div>
             <div class="about-team--bottom">
-              <div class="about-team__item">
+              <div class="about-team__item wow zoomIn">
                 <img src="img/team/team.png" alt="Developer">
                 <div class="about-team__inner">
                   <p>Alexander Semenov</p>
@@ -127,7 +133,7 @@
                 </div>
               </div>
 
-              <div class="about-team__item">
+              <div class="about-team__item wow zoomIn">
                 <img src="img/team/team1.png" alt="Developer">
                 <div class="about-team__inner">
                   <p>Alexander Semenov</p>
@@ -135,7 +141,7 @@
                 </div>
               </div>
 
-              <div class="about-team__item">
+              <div class="about-team__item wow zoomIn">
                 <img src="img/team/team2.png" alt="Developer">
                 <div class="about-team__inner">
                   <p>Alexander Semenov</p>
@@ -150,7 +156,7 @@
       <section class="about-job">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6 align-self-center wow fadeInLeft">
               <div class="about-job__left">
                 <h2 class="about-job__title">Akita Inu Dog</h2>
                 <div class="about-job__text">
@@ -165,7 +171,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6 align-self-center wow fadeInRight">
               <div class="about-job__right">
                 <img src="img/phone.png" alt="img" class="about-job__img">
               </div>
@@ -181,8 +187,17 @@
               <h1>Gallery</h1>
               <p>Examples of work performed</p>
             </div>
-
             <div class="gallery-bottom">
+              <a href="img/gallery/1.jpg" data-lightbox="mygallery"><img src="img/gallery/1.jpg" alt="img"></a>
+              <a href="img/gallery/2.jpg" data-lightbox="mygallery"><img src="img/gallery/2.jpg" alt="img"></a>
+              <a href="img/gallery/3.jpg" data-lightbox="mygallery"><img src="img/gallery/3.jpg" alt="img"></a>
+              <a href="img/gallery/4.jpg" data-lightbox="mygallery"><img src="img/gallery/4.jpg" alt="img"></a>
+              <a href="img/gallery/5.jpg" data-lightbox="mygallery"><img src="img/gallery/5.jpg" alt="img"></a>
+              <a href="img/gallery/6.jpg" data-lightbox="mygallery"><img src="img/gallery/6.jpg" alt="img"></a>
+              <a href="img/gallery/7.jpg" data-lightbox="mygallery"><img src="img/gallery/7.jpg" alt="img"></a>
+              <a href="img/gallery/8.jpg" data-lightbox="mygallery"><img src="img/gallery/8.jpg" alt="img"></a>
+            </div>
+<!--             <div class="gallery-bottom">
               <div class="gallery-bottom__item">
                 <img src="img/gallery/1.jpg" alt="Gallery">
               </div>
@@ -214,7 +229,7 @@
               <div class="gallery-bottom__item">
                 <img src="img/gallery/8.jpg" alt="Gallery">
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -223,17 +238,15 @@
         <div class="skills-title">
           <h1>Our skills</h1>
           <p>My professional qualities:</p>
-          <ul class="skills-title__text">
+          <ol class="skills-title__text">
             <li>Detailed approach to work</li>
-            <li>I do not use designers,<br> I work in manual mode</li>
-            <li>I will always share if<br> I see a more rational decision.</li>
             <li>Clear compliance with the technical task</li>
             <li>Literacy, politeness and clean code</li>
-          </ul>
+          </ol>
         </div>
       </section>
 
-      <section class="contacts" id="contacts" data-vide-bg="video/Toy_is_gone/Toy_is_gone">
+      <section class="contacts" id="contacts" data-vide-bg="video/Candolim-Beach/Candolim-Beach">
         <div class="contacts-block">
           <h1>Contacts</h1>
           <div class="contacts-block__items">
@@ -266,13 +279,15 @@
       </section>
     </main>
 
-    <footer></footer>
-    
-
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="js/libs/jquery-3.3.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/jquery.vide.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

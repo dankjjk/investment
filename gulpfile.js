@@ -43,7 +43,7 @@ gulp.task('sass:compile', function () {
   		browsers: ['last 2 versions'],
   		cascade: false }))
     .pipe(rename('main.min.css'))
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist/css/'));
 });
 
@@ -85,6 +85,12 @@ gulp.task('copy:fonts', function() {
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+/* --------------- Copy css-libs --------------- */
+
+gulp.task('copy:css-libs', function() {
+	return gulp.src('src/scss/libs/*.css')
+		.pipe(gulp.dest('dist/css/libs'));
+});
 
 /* --------------- Copy js-libs --------------- */
 
@@ -104,7 +110,7 @@ gulp.task('copy:video-bg', function() {
 
 /* --------------- Copy --------------- */
 
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:js-libs', 'copy:video-bg'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:css-libs', 'copy:js-libs', 'copy:video-bg'));
 
 
 /* --------------- Watchers --------------- */
